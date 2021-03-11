@@ -266,7 +266,7 @@ export default class ToDoListing extends React.Component {
                 return
             }
             let query = text.toLowerCase();
-            let data = [...this.state.data]
+            let data = [...this.state.fileteredData]
             let fileteredData = data.filter(
                 item =>
                     (item.title && item.title.toLowerCase().indexOf(query) >= 0) ||
